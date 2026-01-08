@@ -71,5 +71,5 @@ async def chat_id_for_mail() -> list[int]:
     result = []
     for key in chat_data:
         if chat_data[key]:
-            result.append(key)
+            result.append(int(key))  # Преобразуем строку в int
     return result
